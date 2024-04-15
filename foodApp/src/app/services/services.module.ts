@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RestaurantsService } from './restaurants.service';
+import { CustomPipe } from './custom.pipe';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CustomPipe
+  ],
   imports: [
     CommonModule
   ],
