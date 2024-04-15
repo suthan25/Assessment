@@ -1,0 +1,130 @@
+.container{
+    display: flex;
+    margin: 2em 2em;
+    width: 22em;
+}
+.rest-info{
+    margin-left: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1.6em;
+}
+img{
+    border-radius: 5px;
+}
+.rating{
+    height: 20px;
+    width: 27px;
+    background-color: green;
+    margin-left: 15em;
+    margin-top: -3.4em;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 14px;
+}
+h5{
+    font-size: 17px;
+}
+.outer{
+    display: flex;
+    width: 83.5em;
+    flex-wrap: wrap;
+}
+.price{
+    font-size: 14px;
+}
+.food{
+    font-size: 15px;
+}
+@media screen and (max-width:1024px){
+    .outer{
+        display: flex;
+        width: 55em;
+        flex-wrap: wrap;
+        margin-left: 2em;
+    }
+    h5{
+        font-size: 15px;
+    }
+    .rating{
+        height: 15px;
+        width: 19px;
+        background-color: green;
+        margin-left: 22em;
+        margin-top: -2.4em;
+        border-radius: 2px;
+        display: grid;
+        place-items: center;
+        color: white;
+        font-size: 11px;
+    }
+    .rest-info{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0em;
+        margin-left: 0.7em;
+    }
+    .container{
+        display: flex;
+        margin: 1.9em 2em;
+        width: 23.5em;
+        height: 12em;
+    }
+    img{
+        height: 12em;
+        width: 9.5em;
+    }
+    .price{
+        font-size: 14px;
+        margin-top: 0em;
+    }
+    .food{
+        margin-top: 0em;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:375px){
+    .outer{
+        display: flex;
+        width: 22.35em;
+        flex-wrap: wrap;
+    }
+    h5{
+        font-size: 11px;
+    }
+    .rating{
+        height: 12px;
+        width: 17px;
+        background-color: green;
+        margin-left: 22em;
+        margin-top: -2.4em;
+        border-radius: 2px;
+        display: grid;
+        place-items: center;
+        color: white;
+        font-size: 8px;
+    }
+    .rest-info{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0em;
+        margin-left: 0.7em;
+    }
+    .container{
+        display: flex;
+        margin: 1em 1.3em 1em;
+        width: 20em;
+        height: 4em;
+    }
+    img{
+        height: 4em;
+        width: 5em;
+    }
+    .price{
+        font-size: 9px;
+        margin-top: -0.2em;
+    }
+    .food{
+        margin-top: -1em;
+        font-size: 10px;
+    }
+}

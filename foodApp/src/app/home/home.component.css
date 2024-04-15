@@ -1,0 +1,338 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css");
+.profile{
+    border-radius: 50%;
+    margin-left: 80em;
+    height: 32px;
+    width: 32px;
+    margin-top: -2.6em;
+}
+.location{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    position: relative;
+    height: 20vh;
+    margin-top: 1em;
+  }
+owl-carousel-o {
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+.owl-item {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+.animated  {
+    -webkit-animation-duration : 1000 ms  ;
+    animation-duration : 1000 ms  ;
+    -webkit-animation-fill-mode : both  ;
+    animation-fill-mode : both  ;
+  }  
+.owl-animated-out {
+    z-index : 1 
+     }
+.owl-animated-in {
+    z-index : 0 
+     }
+  .fadeOut  {
+    -webkit-animation-name : fadeOut  ;
+    animation-name : fadeOut  ;
+  }  
+  @-webkit-keyframes  fadeOut  {
+    0% {
+      opacity : 1   ;
+    }  
+    100% {
+      opacity : 0   ;
+    }  
+  }
+  @keyframes  fadeOut  {
+    0% {
+      opacity : 1   ;
+    }  
+    100% {
+      opacity : 0   ;
+    }  
+  }
+ input{
+    width: 100em;
+    height: 2.9em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 5px 6px 4px rgb(232, 229, 229);
+    outline: none;
+    text-indent: 2em;
+ } 
+ #search{
+  margin-top: 1em;
+ }
+ #delivery-type{
+  margin-top: 1em;
+  width: 83.4em;
+  height: 2.5em;
+  display: flex;
+  background-color: rgb(241, 237, 237);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ .loc-symbol{
+  margin-top: 10px;
+  height: 33px;
+  width: 30px;
+ }
+ #delivery-type div{
+  height: 2em;
+  width: 43em;
+  border-radius: 5px;
+  margin-left: 0.5em;
+  margin-top: 0.25em;
+  display: grid;
+  place-items: center;
+ }
+ #delivery{
+  background-color: white;
+ }
+ .add-name{
+  margin-left: 3em;
+  margin-top: -1.5em;
+  width: 10em;
+ }
+ #deals{
+  margin-top: 0em;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+.deal-type{
+  border: 1px solid rgb(181, 178, 178);
+  display: grid;
+  place-items: center;
+  height: 7.5em;
+  width: 12em;
+  margin-left: 3.7em;
+  border-radius: 5px;
+ }
+ footer{
+  box-shadow: 0 0 7px 8px rgb(245, 245, 245);
+  z-index: 2;
+  height: 4em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ nav a{
+  margin-left: 25em;
+  text-decoration: none;
+ }
+ nav{
+ margin-top: 1.6em;
+ }
+ #options{
+  display: flex;
+  margin-top: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ #options div{
+  height: 35px;
+  width: 10em;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  margin-left: 1em;
+ }
+ #options div select{
+  border: none;
+  outline: none;
+ }
+ .deal-type img{
+  height: 30px;
+  width: 50px;
+ }
+ /* main{
+  margin-top: 1em;
+  margin-left: 1em;
+ } */
+ @media screen and (max-width:1024px){
+  .profile{
+    border-radius: 50%;
+    margin-left: 60em;
+    height: 32px;
+    width: 32px;
+    margin-top: -3em;
+  } 
+  input{
+    width: 75em;
+    height: 2.9em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 5px 6px 4px rgb(232, 229, 229);
+    outline: none;
+    text-indent: 2em;
+  }
+  #delivery-type{
+    margin-top: 1em;
+    width: 62.8em;
+    height: 2.5em;
+    display: flex;
+    background-color: rgb(241, 237, 237);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   #deals{
+    margin-top: -10em;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 2em;
+   }
+   .deal-type{
+    border: 1px solid rgb(181, 178, 178);
+    display: grid;
+    place-items: center;
+    height: 8em;
+    width: 10em;
+    margin-left: 1.7em;
+    border-radius: 5px;
+   }
+   .deal-type div{
+    font-size: 18px;
+   }
+   .deal-type img{
+    height: 63px;
+    width: 60px;
+   }
+   #options{
+    display: flex;
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   #options div{
+    height: 30px;
+    width: 40em;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    margin-left: 0.4em;
+    font-size: 14px;
+   }
+   footer{
+    box-shadow: 0 0 7px 8px rgb(245, 245, 245);
+    z-index: 2;
+    height: 4em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   nav a{
+    margin-left: 20.5em;
+    text-decoration: none;
+   }
+   nav{
+   margin-top: 1.6em;
+   }
+   #options div select{
+    border: none;
+    outline: none;
+    font-size: 14px;
+   }
+ }
+ @media screen and (max-width:375px){
+  .profile{
+    border-radius: 50%;
+    margin-left: 20em;
+    height: 32px;
+    width: 32px;
+    margin-top: -3em;
+  } 
+  input{
+    width: 26.5em;
+    height: 2.9em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 5px 6px 4px rgb(232, 229, 229);
+    outline: none;
+    text-indent: 2em;
+  }
+  #delivery-type{
+    margin-top: 1em;
+    width: 22.3em;
+    height: 2.5em;
+    display: flex;
+    background-color: rgb(241, 237, 237);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   #deals{
+    margin-top: 0em;
+    margin-left: -0.35em;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .deal-type{
+    border: 1px solid rgb(181, 178, 178);
+    display: grid;
+    place-items: center;
+    height: 3.7em;
+    width: 4.7em;
+    margin-left: 0.25em;
+    border-radius: 5px;
+   }
+   .deal-type div{
+    font-size: 7px;
+   }
+   .deal-type img{
+    height: 23px;
+    width: 30px;
+   }
+   #options{
+    display: flex;
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   #options div{
+    height: 22px;
+    width: 10em;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    margin-left: 0.4em;
+    font-size: 8px;
+   }
+   footer{
+    box-shadow: 0 0 7px 8px rgb(245, 245, 245);
+    z-index: 2;
+    height: 4em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   nav a{
+    margin-left: 6.5em;
+    text-decoration: none;
+   }
+   nav{
+   margin-top: 1.6em;
+   }
+   #options div select{
+    border: none;
+    outline: none;
+    font-size: 8px;
+   }
+ }

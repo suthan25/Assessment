@@ -1,0 +1,56 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header>
+  <div class="location">
+    <img class="loc-symbol" src="https://tse3.mm.bing.net/th?id=OIP.8frsmS7XewAjrawBCZ1CyQHaHa&pid=Api&P=0&h=180" alt="" >
+    <div class="add-name">657-Mars, Milkyway</div>
+    <img class="profile" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg" alt="">
+</div>
+<div id="search">
+    <input type="search" name="" id="" placeholder="Search for restaurants,cuisines...">
+</div>
+<div id="delivery-type">
+  <div id="delivery">Delivery</div>
+  <div id="Self">Self Pickup</div>
+</div>
+<div class="wrapper">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of image">
+        <ng-template class="slide" carouselSlide [id]="slide.id">
+          <img [src]="slide.img" [alt]="slide.id" [title]="slide.id" height="100em" style="border-radius: 10px;">
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>  
+  </div>
+  <div id="deals">
+    <div class="deal-type"><img src="../../assets/hand-delivery.png" alt=""><div>Express Delivery</div></div>
+    <div class="deal-type"><img src="../../assets/shield.png" alt=""><div>Safely Sealed</div></div>
+    <div class="deal-type"><img src="../../assets/discount.png" alt=""><div>Great Offers</div></div>
+    <div class="deal-type"><img src="../../assets/new-arrivals.png" alt=""><div>New Arrivals</div></div>
+    <div class="deal-type"><img src="../../assets/global-research.png" alt=""><div>Trending Places</div></div>
+  </div>
+  <div id="options">
+    <div>Filter</div>
+    <div><select class="rate" id="rating">
+      <option value="0" selected>Rating</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select></div>
+    <div>Chinese</div>
+    <div>Indian</div>
+    <div>Asian</div>
+    <div>American</div>
+    <div>African</div>
+  </div>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <nav>
+  <a routerLink="veg">Veg</a>
+  <a routerLink="nonVeg">Non Veg</a>
+  </nav>
+</footer> 
