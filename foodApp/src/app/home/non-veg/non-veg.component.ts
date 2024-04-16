@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class NonVegComponent {
   restaurant: any;
+  currencyType:any = 'INR'
   constructor(private service:RestaurantsService,private data:DataSharingService,
     private router:Router
   ){

@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VegComponent } from './home/veg/veg.component';
 import { NonVegComponent } from './home/non-veg/non-veg.component';
 import { RestaurantListingComponent } from './restaurant-listing/restaurant-listing.component';
+import { ServicesModule } from './services/services.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RestaurantListingComponent } from './restaurant-listing/restaurant-list
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    ServicesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

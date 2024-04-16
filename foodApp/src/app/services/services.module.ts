@@ -12,6 +12,7 @@ import { CustomPipe } from './custom.pipe';
   imports: [
     CommonModule
   ],
-  providers:[RestaurantsService]
+  providers:[RestaurantsService],
+  exports:[CustomPipe]
 })
 export class ServicesModule { }

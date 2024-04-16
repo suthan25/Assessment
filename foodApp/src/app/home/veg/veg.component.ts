@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 })
 export class VegComponent implements OnInit{
   restaurant: any;
+  currencyType:any = 'INR'
   constructor(private service:RestaurantsService,private data:DataSharingService,
     private router:Router
   ){}

@@ -1,11 +1,17 @@
 <div class="outer">
-<div *ngFor="let key of restaurant;let i = index" class="container" id="content" (click)="viewRestaurant(key)">
-    <div><img [src]="key.img" [alt]="key.id" width="100em" height="100em"></div>
+<div *ngFor="let key of restaurant;let i = index" class="container" id="content">
+    <div (click)="viewRestaurant(key)"><img [src]="key.img" [alt]="key.id" width="100em" height="100em"></div>
     <div class="rest-info">
-        <h5>{{key.restaurant}}</h5>
+        <h5 (click)="viewRestaurant(key)">{{key.restaurant}}</h5>
         <div class="rating">{{key.rating}}</div>
-        <p class="food">{{key.food}}</p>
-        <p class="price">₹{{key.price}} per person | 35-40 min</p>
+        <p class="food" (click)="viewRestaurant(key)">{{key.food}}</p>
+        <p class="price">{{key.price|custom:currencyType| currency:currencyType}} per person | 35-40 min</p>
+        <select [(ngModel)]='currencyType'>
+            <option value="INR" selected>INR</option>
+            <option value="USD">USD</option>
+            <option value="CAN">CAN</option>
+            <option value="EUR">EUR</option>
+        </select>
     </div>
 </div>
 </div>
